@@ -46,7 +46,9 @@ app.get('/all', async (req, res) => {
     } catch (error) {
         res.status(404).send({ msg: "error in fetching data", err: error });
     }
-})
+});
+
+
 
 app.listen(process.env.PORT , () => {
     console.log("running on port", process.env.PORT);
